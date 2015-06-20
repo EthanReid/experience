@@ -1,4 +1,6 @@
-ex, xlv_TEXCOORD1) * xlv_COLOR0).w - _Cutoff);
+owp vec4 tmpvar_1;
+  lowp float x_2;
+  x_2 = ((texture2D (_MainTex, xlv_TEXCOORD1) * xlv_COLOR0).w - _Cutoff);
   if ((x_2 < 0.0)) {
     discard;
   };
@@ -34299,6 +34301,4 @@ uniform 	mat4 unity_CameraProjection;
 uniform 	mat4 unity_CameraInvProjection;
 uniform 	mediump vec4 _WorldSpaceLightPos0;
 uniform 	vec4 _LightPositionRange;
-uniform 	vec4 unity_4LightPosX0;
-uniform 	vec4 unity_4LightPosY0;
-uniform 	vec4 
+uniform 	vec4 un

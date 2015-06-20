@@ -1,4 +1,7 @@
-Instruction 11218
+7
+    //MUL
+    t16_7.xyz = t16_1.xxx * _LightColor0.xyz;
+    //Instruction 11218
     //MUL
     t16_8.xyz = t16_7.xyz * _SpecColor.xyz;
     //Instruction 11219
@@ -36182,6 +36185,4 @@ Keywords { "DIRECTIONAL" "SHADOWS_SCREEN" "SHADOWS_NATIVE" "LIGHTMAP_OFF" "DIRLI
 precision highp float;
 uniform 	vec4 _Time;
 uniform 	vec4 _SinTime;
-uniform 	vec4 _CosTime;
-uniform 	vec4 unity_DeltaTime;
-uniform 	vec3 
+unifo

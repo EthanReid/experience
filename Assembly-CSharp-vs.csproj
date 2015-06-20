@@ -69,7 +69,11 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\VRDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\iOSVRDevice.cs" />
+     <Compile Include="Assets\InputManager.cs" />
      <Compile Include="Assets\MaxP\Shaders\Scripts\DirtyLensFlare.cs" />
+     <Compile Include="Assets\Raycaster.cs" />
+     <Compile Include="Assets\Reticle.cs" />
+     <Compile Include="Assets\SingletonMonoBehaviour.cs" />
      <None Include="Assets\Cardboard\Legacy\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Models\Human Spaceflight - Shuttle, ISS era\International Space Station High Res (JSC)\README.txt" />
      <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\Blur.shader" />

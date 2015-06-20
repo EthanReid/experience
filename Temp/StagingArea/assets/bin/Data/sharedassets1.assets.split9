@@ -1,4 +1,4 @@
-t0;
+dDistance.xxxx * vec4(1.200000, 2.000000, 1.600000, 4.800000) + t0;
     //Instruction 4427
     //FRC
     t0 = fract(t0);
@@ -35167,6 +35167,4 @@ varying highp vec2 xlv_TEXCOORD1;
 varying lowp vec4 xlv_COLOR0;
 void main ()
 {
-  lowp vec4 tmpvar_1;
-  lowp float x_2;
-  x_2 = ((texture2D (_MainT
+  l

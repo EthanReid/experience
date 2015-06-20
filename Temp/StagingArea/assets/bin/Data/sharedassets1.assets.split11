@@ -1,4 +1,6 @@
-unity_4LightPosZ0;
+ity_4LightPosX0;
+uniform 	vec4 unity_4LightPosY0;
+uniform 	vec4 unity_4LightPosZ0;
 uniform 	mediump vec4 unity_4LightAtten0;
 uniform 	mediump vec4 unity_LightColor[8];
 uniform 	vec4 unity_LightPosition[8];
@@ -34970,7 +34972,4 @@ void main()
     //Instruction 11216
     //MAD
     t16_1.x = t16_1.x * t16_19 + _LightShadowData.x;
-    //Instruction 11217
-    //MUL
-    t16_7.xyz = t16_1.xxx * _LightColor0.xyz;
-    //
+    //Instruction 1121

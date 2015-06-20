@@ -1,4 +1,6 @@
-_WorldSpaceCameraPos;
+rm 	vec4 _CosTime;
+uniform 	vec4 unity_DeltaTime;
+uniform 	vec3 _WorldSpaceCameraPos;
 uniform 	vec4 _ProjectionParams;
 uniform 	vec4 _ScreenParams;
 uniform 	vec4 _ZBufferParams;
@@ -37181,5 +37183,3 @@ void main()
     //MAD
     t16_19 = t16_5.x * t2.w + t16_19;
     //Instruction 18178
-    //MUL
-    t16_19 = t16_19 * unity_LightGammaCorrectionConst
