@@ -1,4 +1,9 @@
-()
+arying lowp vec3 xlv_TEXCOORD2;
+varying lowp vec3 xlv_TEXCOORD3;
+varying lowp vec3 xlv_TEXCOORD4;
+varying highp vec3 xlv_TEXCOORD5;
+varying highp vec2 xlv_TEXCOORD6;
+void main ()
 {
   lowp vec3 worldBinormal_1;
   lowp vec3 worldTangent_2;
@@ -35625,12 +35630,4 @@ void main()
     //Instruction 10077
     //MAD
     t16_1.xyz = t0.xyz * vec3(t24) + _WorldSpaceLightPos0.xyz;
-    //Instruction 10078
-    //DP3
-    t16_25 = dot(t16_1.xyz, t16_1.xyz);
-    //Instruction 10079
-    //RSQ
-    t16_25 = inversesqrt(t16_25);
-    //Instruction 10080
-    //MUL
-    t16_1.xyz = vec3(
+    //Instruction 100

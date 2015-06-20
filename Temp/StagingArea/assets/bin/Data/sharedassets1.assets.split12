@@ -1,4 +1,9 @@
-iump float _Smoothness0;
+form 	vec4 _Control_ST;
+uniform 	mediump float _Metallic0;
+uniform 	mediump float _Metallic1;
+uniform 	mediump float _Metallic2;
+uniform 	mediump float _Metallic3;
+uniform 	mediump float _Smoothness0;
 uniform 	mediump float _Smoothness1;
 uniform 	mediump float _Smoothness2;
 uniform 	mediump float _Smoothness3;
@@ -37102,9 +37107,4 @@ uniform 	vec4 unity_LODFade;
 uniform 	mat4 glstate_matrix_transpose_modelview0;
 uniform 	mat4 glstate_matrix_projection;
 uniform 	lowp vec4 glstate_lightmodel_ambient;
-uniform 	mat4 unity_MatrixV;
-uniform 	mat4 unity_MatrixVP;
-uniform 	lowp vec4 unity_AmbientSky;
-uniform 	lowp vec4 unity_AmbientEquator;
-uniform 	lowp vec4 unity_AmbientGround;
-uniform 	lowp ve
+uniform 	mat4 uni

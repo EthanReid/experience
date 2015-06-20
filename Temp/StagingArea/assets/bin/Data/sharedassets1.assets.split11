@@ -1,4 +1,12 @@
-t16_25) * t16_1.xyz;
+78
+    //DP3
+    t16_25 = dot(t16_1.xyz, t16_1.xyz);
+    //Instruction 10079
+    //RSQ
+    t16_25 = inversesqrt(t16_25);
+    //Instruction 10080
+    //MUL
+    t16_1.xyz = vec3(t16_25) * t16_1.xyz;
     //Instruction 10081
     //SAMPLE
     t10_0.xyz = texture(_Normal3, vs_TEXCOORD1.zw).xyz;
@@ -36475,9 +36483,4 @@ uniform 	lowp vec4 _LightColor0;
 uniform 	lowp vec4 _SpecColor;
 uniform 	mediump vec4 unity_LightGammaCorrectionConsts;
 uniform 	mediump mat4 _LightMatrix0;
-uniform 	vec4 _Control_ST;
-uniform 	mediump float _Metallic0;
-uniform 	mediump float _Metallic1;
-uniform 	mediump float _Metallic2;
-uniform 	mediump float _Metallic3;
-uniform 	med
+uni

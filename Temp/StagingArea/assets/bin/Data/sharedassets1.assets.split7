@@ -1,4 +1,11 @@
-].xyz * in_POSITION0.xxx + t0.xyz;
+
+    vs_TEXCOORD1.xyz = t0.xyz;
+    //Instruction 52
+    //MUL
+    t0.xyz = in_POSITION0.yyy * _Object2World[1].xyz;
+    //Instruction 53
+    //MAD
+    t0.xyz = _Object2World[0].xyz * in_POSITION0.xxx + t0.xyz;
     //Instruction 54
     //MAD
     t0.xyz = _Object2World[2].xyz * in_POSITION0.zzz + t0.xyz;
@@ -35524,8 +35531,4 @@ uniform 	vec4 unity_ShadowSplitSqRadii;
 uniform 	vec4 unity_LightShadowBias;
 uniform 	vec4 _LightSplitsNear;
 uniform 	vec4 _LightSplitsFar;
-uniform 	mat4 unity_World2Shadow[4];
-uniform 	mediump vec4 _LightShadowData;
-uniform 	vec4 unity_ShadowFadeCenterAndType;
-uniform 	mat4 glstate_matrix_mvp;
-uniform 	mat4 glstate_matr
+unifor

@@ -1,4 +1,10 @@
- t10_2.xyz = texture(_Normal0, vs_TEXCOORD0.xy).xyz;
+yz = texture(_Normal3, vs_TEXCOORD1.zw).xyz;
+    //Instruction 7563
+    //SAMPLE
+    t10_1.xyz = texture(_Normal2, vs_TEXCOORD1.xy).xyz;
+    //Instruction 7564
+    //SAMPLE
+    t10_2.xyz = texture(_Normal0, vs_TEXCOORD0.xy).xyz;
     //Instruction 7565
     //SAMPLE
     t10_3.xyz = texture(_Normal1, vs_TEXCOORD0.zw).xyz;
@@ -34373,9 +34379,4 @@ uniform highp vec4 _Splat2_ST;
 uniform highp vec4 _Splat3_ST;
 varying highp vec4 xlv_TEXCOORD0;
 varying highp vec4 xlv_TEXCOORD1;
-varying lowp vec3 xlv_TEXCOORD2;
-varying lowp vec3 xlv_TEXCOORD3;
-varying lowp vec3 xlv_TEXCOORD4;
-varying highp vec3 xlv_TEXCOORD5;
-varying highp vec2 xlv_TEXCOORD6;
-void main 
+v

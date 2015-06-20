@@ -1,4 +1,8 @@
-ix_modelview0;
+m 	mat4 unity_World2Shadow[4];
+uniform 	mediump vec4 _LightShadowData;
+uniform 	vec4 unity_ShadowFadeCenterAndType;
+uniform 	mat4 glstate_matrix_mvp;
+uniform 	mat4 glstate_matrix_modelview0;
 uniform 	mat4 glstate_matrix_invtrans_modelview0;
 uniform 	mat4 _Object2World;
 uniform 	mat4 _World2Object;
@@ -34797,10 +34801,4 @@ void main()
 {
     //Instruction 7562
     //SAMPLE
-    t10_0.xyz = texture(_Normal3, vs_TEXCOORD1.zw).xyz;
-    //Instruction 7563
-    //SAMPLE
-    t10_1.xyz = texture(_Normal2, vs_TEXCOORD1.xy).xyz;
-    //Instruction 7564
-    //SAMPLE
-   
+    t10_0.x
