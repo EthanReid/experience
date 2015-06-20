@@ -1,5 +1,4 @@
-/MAD
-    t16_11 = t16_25 * t16_25 + 1.0;
+ t16_11 = t16_25 * t16_25 + 1.0;
     //Instruction 1912
     //MUL
     t16_24 = t16_24 * t16_4.x;
@@ -35355,4 +35354,5 @@ uniform 	mediump vec4 unity_SpecCube1_HDR;
 uniform 	lowp vec4 unity_ColorSpaceGrey;
 uniform 	lowp vec4 unity_ColorSpaceDouble;
 uniform 	mediump vec4 unity_ColorSpaceDielectricSpec;
-uniform 	mediump vec4 unity_ColorSpaceLuminance
+uniform 	mediump vec4 unity_ColorSpaceLuminance;
+unifor
