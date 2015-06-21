@@ -1,4 +1,25 @@
- t16_11 = t16_25 * t16_25 + 1.0;
+t16_6.xyz = vec3(t16_24) * vs_TEXCOORD4.xyz;
+    //Instruction 1905
+    //DP3
+    t16_24 = dot(t16_6.xyz, t16_5.xyz);
+    //Instruction 1906
+    //DP3
+    t16_4.x = dot(t16_6.xyz, t16_4.xyz);
+    //Instruction 1907
+    //MAX
+    t16_7 = max(t16_4.x, 0.0);
+    //Instruction 1908
+    //MAX
+    t16_14 = max(t16_24, 0.0);
+    //Instruction 1909
+    //LOG
+    t16_24 = log2(t16_14);
+    //Instruction 1910
+    //MUL
+    t16_4.x = t16_25 * t16_25;
+    //Instruction 1911
+    //MAD
+    t16_11 = t16_25 * t16_25 + 1.0;
     //Instruction 1912
     //MUL
     t16_24 = t16_24 * t16_4.x;
@@ -35344,15 +35365,4 @@ uniform 	vec4 unity_FogParams;
 uniform 	vec4 unity_LightmapST;
 uniform 	vec4 unity_DynamicLightmapST;
 uniform 	vec4 unity_SpecCube0_BoxMax;
-uniform 	vec4 unity_SpecCube0_BoxMin;
-uniform 	vec4 unity_SpecCube0_ProbePosition;
-uniform 	mediump vec4 unity_SpecCube0_HDR;
-uniform 	vec4 unity_SpecCube1_BoxMax;
-uniform 	vec4 unity_SpecCube1_BoxMin;
-uniform 	vec4 unity_SpecCube1_ProbePosition;
-uniform 	mediump vec4 unity_SpecCube1_HDR;
-uniform 	lowp vec4 unity_ColorSpaceGrey;
-uniform 	lowp vec4 unity_ColorSpaceDouble;
-uniform 	mediump vec4 unity_ColorSpaceDielectricSpec;
-uniform 	mediump vec4 unity_ColorSpaceLuminance;
-unifor
+uni
