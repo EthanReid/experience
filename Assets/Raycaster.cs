@@ -14,7 +14,8 @@ public class Raycaster : SingletonMonoBehaviour<Raycaster> {
 	private GameObject mLastObjectHit = null;
 	float timer = 0;
 	float stareTime = 0;
-	public Color PressedColor = new Color (1f, 1f, 1f, 1f);
+	public Color PressedColorAnswer = new Color (1f, 1f, 1f, 1f);
+	public Color PressedColorLaunch = new Color (1f, 1f, 1f, 1f);
 	// Update is called once per frame
 	void FixedUpdate () {
 		timer += Time.deltaTime	;
@@ -35,9 +36,33 @@ public class Raycaster : SingletonMonoBehaviour<Raycaster> {
 				if(hit.collider.gameObject != null) {
 					mLastObjectHit = hit.collider.gameObject;
 					stareTime += Time.deltaTime;
+					if(hit.collider.gameObject.tag == "Final"){
+						SpriteRenderer objectsSpriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
+						objectsSpriteRenderer.color = PressedColorLaunch;
+						if(stareTime > 2){
+							//Debug.Log("something");
+							//Vector3 movePos = new Vector3(2100, 950, 832);
+							//hit.collider.gameObject.transform.localScale = new Vector3(75,75,10);
+							//hit.collider.gameObject.transform.position = movePos;
+							Application.LoadLevel("Space 1");
+							stareTime = 0;
+						}
+					}
+					if(hit.collider.gameObject.tag == "Player"){
+						//SpriteRenderer objectsSpriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
+						//objectsSpriteRenderer.color = PressedColorLaunch;
+						if(stareTime > 2){
+							//Debug.Log("something");
+							//Vector3 movePos = new Vector3(2100, 950, 832);
+							//hit.collider.gameObject.transform.localScale = new Vector3(75,75,10);
+							//hit.collider.gameObject.transform.position = movePos;
+							Application.LoadLevel("Space");
+							stareTime = 0;
+						}
+					}
 					if(hit.collider.gameObject.tag == "Answers"){
 						SpriteRenderer objectsSpriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
-						objectsSpriteRenderer.color = PressedColor;
+						objectsSpriteRenderer.color = PressedColorAnswer;
 						if(stareTime > 2){
 							Debug.Log("something");
 							Vector3 movePos = new Vector3(2100, 950, 832);
